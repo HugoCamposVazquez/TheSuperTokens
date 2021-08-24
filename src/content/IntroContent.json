@@ -1,13 +1,15 @@
 {
-  "title": "Landing page template for developers & startups",
-  "text": "Beautifully designed templates using React.js, ant design and styled-components! Save weeks of time and build your landing page in minutes.",
+  "title": "The battle of the SuperTokens",
+  "text": "A new era in blockchain gaming is coming..",
+  "text2": "A new era in blockchain gaming is coming..",
   "button": [
     {
-      "title": "Explore"
+      "title": "Flash Token"
     },
     {
       "title": "Learn more",
       "color": "#fff"
     }
   ]
+  
 }

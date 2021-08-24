@@ -2,14 +2,16 @@ import styled from "styled-components";
 
 export const RightBlockContainer = styled("section")`
   position: relative;
-  padding: 10rem 0 8rem;
-
+  padding: 5rem 0 5rem;
+body{
+  background-color:#121827f2;
+}
   @media only screen and (max-width: 1024px) {
     padding: 8rem 0 6rem;
   }
 
   @media only screen and (max-width: 768px) {
-    padding: 4rem 0 3rem;
+    padding: 3rem 1.5rem 3rem;
   }
 `;
 

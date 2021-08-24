@@ -27,12 +27,12 @@ export const Styles = createGlobalStyle`
         padding:0;
         border: 0;
         outline: 0;
-        background: #fff;
+        background: #1e2432;
         overflow-x: hidden;
     }
 
     a:hover {
-        color: #18216d;
+        color: #be1b1f;
     }
 
     input,
@@ -58,8 +58,8 @@ export const Styles = createGlobalStyle`
     h5,
     h6 {
         font-family: 'Motiva Sans Bold', serif;
-        color: #18216d;
-        font-size: 56px;
+        color: #FFF;
+        font-size: 44px;
         line-height: 1.18;
 
         @media only screen and (max-width: 890px) {
@@ -72,7 +72,7 @@ export const Styles = createGlobalStyle`
     }
 
     p {
-        color: #18216d;
+        color: #ffe745;
         font-size: 21px;        
         line-height: 1.41;
     }
@@ -108,5 +108,17 @@ export const Styles = createGlobalStyle`
 
     .ant-drawer-content-wrapper {
         width: 300px !important;
+    }
+    .logos {
+        text-align: center;
+        background: #ffffff;
+        padding: 0px 0;
+    }
+    .logos img {
+        max-width: 140px;
+        margin-right: 15px;
+    }
+    img.apple {
+        max-width: 99px;
     }
 `;

@@ -5,12 +5,14 @@ export const LeftContentSection = styled("section")`
   padding: 10rem 0 8rem;
 
   @media only screen and (max-width: 1024px) {
-    padding: 4rem 0 4rem;
+    padding: 4rem 1.5rem 4rem;
   }
 `;
 
 export const Content = styled("p")`
   margin: 1.5rem 0 2rem 0;
+  font-size: 21px;
+  color:red;
 `;
 
 export const ContentWrapper = styled("div")`
@@ -39,4 +41,5 @@ export const MinTitle = styled("h6")`
 
 export const MinPara = styled("p")`
   font-size: 13px;
+  color: #ffe745;
 `;

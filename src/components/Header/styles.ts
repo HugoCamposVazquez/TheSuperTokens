@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import { MenuOutlined } from "@ant-design/icons";
 
 export const HeaderSection = styled("header")`
-  padding: 1rem 0.5rem;
+  padding: 1rem 2rem;
+  background: #121827f2;
+  color:white!important;
 
   .ant-row-space-between {
     align-items: center;
@@ -50,7 +52,7 @@ export const Burger = styled("div")`
   display: none;
 
   svg {
-    fill: #2e186a;
+    fill: #FFF;
   }
 `;
 
@@ -68,7 +70,7 @@ export const Menu = styled("h5")`
 
 export const CustomNavLinkSmall = styled(NavLink)`
   font-size: 1.2rem;
-  color: #18216d;
+  color: #FFF;
   transition: color 0.2s ease-in;
   margin: 0.5rem 2rem;
 
@@ -101,4 +103,23 @@ export const Span = styled("span")`
     text-underline-position: under;
     text-decoration: rgb(255, 130, 92) wavy underline;
   }
+`;
+
+export const LanguageSwitch = styled("div")<any>`
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+
+  &:hover,
+  &:active,
+  &:focus {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+`;
+
+export const LanguageSwitchContainer = styled("div")`
+  display: flex;
+  justify-content: space-between;
+  width: 85px;
 `;
