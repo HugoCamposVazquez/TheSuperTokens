@@ -187,6 +187,16 @@ export const Styles = createGlobalStyle`
         max-width: 140px;
         margin-right: 15px;
     }
+    .logosFooter {
+        text-align: left;
+        background: #ffffff;
+        padding: 0px 0;
+        margin-top: 25px;
+    }
+    .logosFooter img {
+        max-width: 140px;
+        margin-right: 15px;
+    }
     a.getFlash {
         color: white;
         font-weight: 900;
@@ -195,6 +205,10 @@ export const Styles = createGlobalStyle`
     img.apple {
         max-width: 99px;
     }
+    .social-footer{
+        height: 100%;      
+    }
+    
     .hall{max-width: 750px;margin:0 auto;}
     .hallDiv{text-align: center;}
 `;

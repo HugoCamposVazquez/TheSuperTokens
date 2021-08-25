@@ -13,6 +13,7 @@ const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
+const ContentBlock2 = lazy(() => import("../../components/ContentBlock2"));
 
 interface SocialLinkProps {
   href: string;
@@ -29,7 +30,7 @@ const Home = ({ t }: any) => {
         key={src}
         aria-label={src}
       >
-        <SvgIcon src={src} width="25px" height="25px" />
+        <SvgIcon src={src} width="25px" height="100%" />
       </a>
     );
   };
@@ -64,17 +65,17 @@ const Home = ({ t }: any) => {
         title={AboutContent.title}
         content={AboutContent.text}
         section={AboutContent.section}
-        icon="graphs.svg"
+        icon="heros.png"
         id="about"
       />
-      <ContentBlock
+      <ContentBlock2
         type="right"
         title={MissionContent.title}
         content={MissionContent.text}
-        icon="product-launch.svg"
+        icon="super-you.png"
         id="mission"
       />
-      <ContentBlock
+    {/*   <ContentBlock
         type="left"
         title={ProductContent.title}
         content={ProductContent.text}
@@ -85,7 +86,7 @@ const Home = ({ t }: any) => {
         title={ContactContent.title}
         content={ContactContent.text}
         id="contact"
-      />
+      /> */}
     </Container>
   );
 };

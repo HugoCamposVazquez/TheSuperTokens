@@ -41,7 +41,7 @@ const Footer = ({ t }: any) => {
         key={src}
         aria-label={src}
       >
-        <SvgIcon src={src} width="25px" height="25px" />
+        <SvgIcon src={src} width="25px" height="100%" />
       </a>
     );
   };
@@ -125,6 +125,14 @@ const Footer = ({ t }: any) => {
               </LanguageSwitchContainer>
             </Col>
           </Row>
+          <div className="logosFooter">
+            <img src="/img/svg/logo-bscscan.svg"></img>
+            <img src="/img/svg/metamask.jpg"></img>
+            <img src="/img/svg/trust-wallet.svg"></img>
+            <img src="/img/svg/Binance-Logo.wine.png"></img>
+            <img className ="apple" src="/img/svg/apple-store.png"></img>
+            <img src="/img/svg/Google-Play-Logo.png"></img>
+          </div>
         </Container>
       </FooterSection>
       <Extra>
@@ -146,20 +154,20 @@ const Footer = ({ t }: any) => {
             </NavLink>
             <FooterContainer>
               <SocialLink
-                href="https://github.com/Adrinlol/create-react-app-adrinlol"
-                src="github.svg"
+                href="https://t.me/flashtokengroup"
+                src="telegram.png"
               />
               <SocialLink
-                href="https://twitter.com/Adrinlolx"
-                src="twitter.svg"
+                href="https://twitter.com/flashswap1"
+                src="twitter.png"
               />
               <SocialLink
-                href="https://www.linkedin.com/in/lasha-kakabadze/"
-                src="linkedin.svg"
+                href="https://app.theflashdefi.com"
+                src="web.png"
               />
               <SocialLink
-                href="https://medium.com/@lashakakabadze/"
-                src="medium.svg"
+                href="https://flashswaptoken.gitbook.io/flashswap/"
+                src="gitbook.png"
               />
  <Button><a className="getFlashT" href="https://dex.theflashdefi.com/#/swap?outputCurrency=0x2656049f068C7389fcD0E15bB4b53bCE3A29c0B1">{t("🔥GET TFLASH🔥")}</a></Button>
             </FooterContainer>

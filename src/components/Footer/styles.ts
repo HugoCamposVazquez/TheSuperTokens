@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const FooterSection = styled("footer")`
-  background: rgb(241, 242, 243);
+  background: white;
   padding: 2.5rem 1.5rem;
 `;
 
