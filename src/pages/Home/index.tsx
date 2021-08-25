@@ -55,8 +55,10 @@ const Home = ({ t }: any) => {
       <MiddleBlock
         title={MiddleBlockContent.title}
         content={MiddleBlockContent.text}
-        button={MiddleBlockContent.button}
       />
+      <div className="hallDiv">
+         <img className="hall"src="/img/svg/hall.png"></img>
+      </div>
       <ContentBlock
         type="left"
         title={AboutContent.title}

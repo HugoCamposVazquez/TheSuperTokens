@@ -2,6 +2,7 @@ import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
 import { SvgIcon } from "../../common/SvgIcon";
 import Container from "../../common/Container";
+import { Button } from "../../common/Button";
 
 import i18n from "i18next";
 import {
@@ -138,7 +139,7 @@ const Footer = ({ t }: any) => {
                 <SvgIcon
                   src="logo.svg"
                   aria-label="homepage"
-                  width="101px"
+                  width="201px"
                   height="64px"
                 />
               </LogoContainer>
@@ -160,12 +161,7 @@ const Footer = ({ t }: any) => {
                 href="https://medium.com/@lashakakabadze/"
                 src="medium.svg"
               />
-              <a href="https://www.buymeacoffee.com/adrinlol">
-                <img
-                  src="https://img.buymeacoffee.com/button-api/?text=Buy me a pizza&emoji=🍕&slug=adrinlol&button_colour=FF5F5F&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"
-                  alt="Buy me a pizza"
-                />
-              </a>
+ <Button><a className="getFlashT" href="https://dex.theflashdefi.com/#/swap?outputCurrency=0x2656049f068C7389fcD0E15bB4b53bCE3A29c0B1">{t("🔥GET TFLASH🔥")}</a></Button>
             </FooterContainer>
           </Row>
         </Container>

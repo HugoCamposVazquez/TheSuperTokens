@@ -30,7 +30,8 @@ export const NavLink = styled(Link)`
 `;
 
 export const Extra = styled("section")`
-  background: rgb(241, 242, 243);
+  background: #121827f2;
+  color: white;
   position: relative;
   width: 100%;
   margin-right: auto;

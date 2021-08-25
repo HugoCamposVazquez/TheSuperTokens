@@ -63,12 +63,9 @@ const Header = ({ t }: any) => {
         <CustomNavLinkSmall onClick={() => scrollTo("product")}>
           <Span>{t("Product")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall
-          style={{ width: "180px" }}
-          onClick={() => scrollTo("contact")}
-        >
+        <CustomNavLinkSmall>
           <Span>
-            <Button>{t("GET TFLASH")}</Button>
+            <Button><a className="getFlashT" href="https://dex.theflashdefi.com/#/swap?outputCurrency=0x2656049f068C7389fcD0E15bB4b53bCE3A29c0B1">{t("🔥GET TFLASH🔥")}</a></Button>
           </Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall>

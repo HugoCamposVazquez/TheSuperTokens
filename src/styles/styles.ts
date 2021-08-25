@@ -91,6 +91,75 @@ export const Styles = createGlobalStyle`
         }
     }
     
+
+    .getFlashT {    
+        color: white;
+        font-weight: 900;
+        letter-spacing: 1px;    
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 180px;
+        height: 40px;
+        &:hover {
+          // box-shadow: 0 0 20px 10px rgba(230, 30, 10, 0.6);
+          animation: burn 1000ms ease-out forwards;
+          background: transparent!important;
+          
+          &::before {
+            content: '';
+            position: absolute;
+            left: 40px;
+            top: 20px;
+            width: 100px;
+            height: 40px;
+            background: rgba(255, 230, 110, 1);
+            border-radius: 100%;
+            animation: flare 1000ms ease-out forwards;
+          }
+      
+          &::after {
+            content: '';
+            position: absolute;
+            right: 40px;
+            width: 100px;
+            height: 40px;
+            background: rgba(255, 230, 110, 1);
+            border-radius: 100%;
+            animation: flare 1000ms ease-out forwards;
+          }
+        }
+      }
+      
+      @keyframes flare {
+        100% {
+          transform: translateY(-20px) scale(1.5);
+          filter: blur(10px);
+          opacity: 0;
+        }
+      }
+      
+      @keyframes burn {
+        0% {
+          color: rgba(255, 130, 110, 1);
+          background: rgba(255, 230, 110, 1);
+          box-shadow:
+            0 0 5px 0 rgba(200, 0, 10, 1),
+            0 0 5px 0 rgba(230, 30, 10, 0.8),
+            0 0 5px 0 rgba(230, 230, 10, 0.6);
+        }
+        
+        100% {
+          color: rgba(0, 0, 0, 1);
+          background: rgba(255, 255, 255, 1);
+          box-shadow:
+            0 -35px 40px 30px rgba(255, 130, 10, 0),
+            0 -30px 30px 10px rgba(230, 30, 10, 0),
+            0 -20px 10px 0 rgba(255, 255, 10, 0);
+        }
+      }
+    }
     *:focus {
         outline: none;
     }
@@ -118,7 +187,14 @@ export const Styles = createGlobalStyle`
         max-width: 140px;
         margin-right: 15px;
     }
+    a.getFlash {
+        color: white;
+        font-weight: 900;
+        letter-spacing: 1px;
+    }
     img.apple {
         max-width: 99px;
     }
+    .hall{max-width: 750px;margin:0 auto;}
+    .hallDiv{text-align: center;}
 `;
