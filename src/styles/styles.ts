@@ -211,4 +211,39 @@ export const Styles = createGlobalStyle`
     
     .hall{max-width: 750px;margin:0 auto;}
     .hallDiv{text-align: center;}
+    h3 {
+        font-size: 19px;
+        line-height: 27px;
+    }
+    h4{font-size: 17px;font-weight: 300px}
+    h4.vertical-timeline-element-subtitle.doing {
+        color: #e91d62;
+    }
+    p.Footer {
+        color: black;
+        font-size: 17px;
+    }
+    .ToDo{color:#0094ff}
+    .vertical-timeline-element-content {
+        position: relative;
+        margin-left: 60px;
+        background: #fff0!important;
+        border-radius: 0px;
+        padding: 1em;
+        -webkit-box-shadow: 0 3px 0 #ddd;
+        box-shadow: 0 3px 0 #ddd;
+        border: 1px solid white!important;
+    }
+    h4.vertical-timeline-element-subtitle.done {
+        color: #0ae40a;
+    }
+    .text-center{text-align:center;}
+    @media (min-width: 767px){
+    .vertical-timeline--two-columns .vertical-timeline-element-icon {
+        width: 38px!important;
+        height: 38px!important;
+        left: 51%!important;
+        margin-left: -30px;
+        top: 6%!important;
+    }}
 `;

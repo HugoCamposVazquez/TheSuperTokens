@@ -7,6 +7,8 @@ import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
 import { withTranslation } from "react-i18next";
 import { SvgIcon } from "../../common/SvgIcon";
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
@@ -43,7 +45,7 @@ const Home = ({ t }: any) => {
         content={IntroContent.text}
         button={IntroContent.button}
         icon="developer2.jpg"
-        id="intro"
+        id="intros"
       />
       <div className="logos">
          <img src="/img/svg/logo-bscscan.svg"></img>
@@ -87,6 +89,142 @@ const Home = ({ t }: any) => {
         content={ContactContent.text}
         id="contact"
       /> */}
+      <div id="timeline">
+        <h2 className="text-center">The #RoadTotheMoonMap</h2>
+      <VerticalTimeline>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            date="30-02-2021"
+            iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff'}}
+           // icon={<WorkIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">Brainstorming & Hits</h3>
+            <h4 className="vertical-timeline-element-subtitle done">Done</h4>
+            <p>
+            After a lot of wandering and a few coffees, and 3 fights, we arrived at the safe harbor.
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            date="1-03-2021"
+            iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+         //   icon={<WorkIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">Concept design</h3>
+            <h4 className="vertical-timeline-element-subtitle done">Done</h4>
+            <p>
+            This part was simple, we have a great team and everyone was aligned.
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            date="15-03-2021"
+            iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff'}}
+          //  icon={<WorkIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">Front design</h3>
+            <h4 className="vertical-timeline-element-subtitle done">Done</h4>
+            <p>
+              User Experience, Visual Design
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            date="10-04-2021"
+            iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff'}}
+           // icon={<WorkIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">Smart contract creation</h3>
+            <h4 className="vertical-timeline-element-subtitle done">Done</h4>
+            <p>
+            Creation of the smart contracts of the first supertoken
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            date="18-06-2021"
+            iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff'}}
+           // icon={<SchoolIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">Security checks</h3>
+            <h4 className="vertical-timeline-element-subtitle done">Done</h4>
+            <p>
+            Let's avoid letting the bad guys work.
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            date="23-06-2021"
+            iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff'}}
+            // icon={<SchoolIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">Front implementation with smart contracts</h3>
+            <h4 className="vertical-timeline-element-subtitle done">Done</h4>
+            <p>
+            Well that ..
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            date="30-08-2021"
+            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+            // icon={<SchoolIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">Launch of the first Yield Farming</h3>
+            <h4 className="vertical-timeline-element-subtitle doing">Doing</h4>
+            <p>
+            We will launch the first yield farming associated with the first supertoken of the combat series
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            date="30-09-2021"
+            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+            // icon={<SchoolIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">Creation of the 2nd super token</h3>
+            <h4 className="vertical-timeline-element-subtitle doing">Doing</h4>
+            <p>
+            The one in charge of fighting with our first super token, is just finishing his training preseason.
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            date="30-10-2021"
+            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+            // icon={<SchoolIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">Launch of the second Yield Farming</h3>
+            <h4 className="vertical-timeline-element-subtitle doing">Doing</h4>
+            <p>
+            Now is the time to start the first battle!
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            date="30-09-2021"
+            iconStyle={{ background: 'rgb(0, 148, 255)', color: '#fff' }}
+            // icon={<SchoolIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">More surprises to coming</h3>
+            <h4 className="vertical-timeline-element-subtitle ToDo">To do</h4>
+            <p>
+           ...
+            </p>
+          </VerticalTimelineElement>
+        </VerticalTimeline>
+      </div>
     </Container>
   );
 };

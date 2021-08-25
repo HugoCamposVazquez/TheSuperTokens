@@ -39,11 +39,11 @@ export const useForm = (validate: any) => {
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     event.persist();
-    setValues((values) => ({
+    setValues((values: any) => ({
       ...values,
       [event.target.name]: event.target.value,
     }));
-    setErrors((errors) => ({ ...errors, [event.target.name]: "" }));
+    setErrors((errors: any) => ({ ...errors, [event.target.name]: "" }));
   };
 
   return {
